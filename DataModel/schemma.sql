@@ -109,4 +109,10 @@ ALTER TABLE ONLY public.weconnect_employee
 ---------------------------------------------
 ALTER TABLE ONLY public.weconnect_vaccine
     ADD CONSTRAINT VACCINE_EMPLOYEE_FK FOREIGN KEY (vaccine_employee) REFERENCES public.weconnect_employee(employee_id);
+    
+INSERT INTO public.weconnect_role(id_role, role_description, role_name)VALUES(1, 'Role for the admin users.', 'ADMIN');
+INSERT INTO public.weconnect_role(id_role, role_description, role_name)VALUES(2, 'Role for the employee users.', 'USER');
+
+INSERT INTO public.weconnect_user(user_id, user_password, user_username, user_role)VALUES(1,'$2y$10$ViPRZSJiM.FGSpaTxqVLnOHO0jwgML9WHlM3AWXt.i1qPhcyrOQ.G', 'aGuaicha', 1);
+
 END;

@@ -14,7 +14,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
-@SuppressWarnings({ "deprecation", "unused" })
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 
