@@ -87,7 +87,7 @@ Para el ejemplo el usuario creado sería:
 {
     "fechaNacimiento": "1986-10-02",
     "telefonoCelular": "0960851986",
-    "direccion": "Calle Vieja y Yanahurco,
+    "direccion": "Calle Vieja y Yanahurco",
     "estadoVacunas": "Vacunado",
     "vacunas": [
         {
@@ -170,13 +170,6 @@ En este ejemplo, se creó un usuario con rol de empleado.
 
 Como se puede observar, el usuario ha sido generado automáticamente y el password correspondiente a la cédula fué encriptado gracias a ByCript, conservando de esa manera la seguridad de credenciales. 
 
-## Artículos base consultados para el desarrollo de este proyecto
-
-[SWAGGER Y SWAGGER UI: ¿QUÉ ES Y POR QUÉ ES IMPRESCINDIBLE PARA TUS APIS?](https://www.chakray.com/es/swagger-y-swagger-ui-por-que-es-imprescindible-para-tus-apis/)
-
-[Authentication based in roles](https://www.devglan.com/spring-security/spring-oauth2-role-based-authorization)
-
-[Introduction to Project Lombok](https://www.baeldung.com/intro-to-project-lombok)
 
 ## Manejo de errores. 
 
@@ -185,4 +178,11 @@ Para el mismo ejemplo de creación de usuario empleado, esta vez se omite la cé
 
 ![Error](/images/Error.png)
 
+## Artículos base consultados para el desarrollo de este proyecto
+
+[SWAGGER Y SWAGGER UI: ¿QUÉ ES Y POR QUÉ ES IMPRESCINDIBLE PARA TUS APIS?](https://www.chakray.com/es/swagger-y-swagger-ui-por-que-es-imprescindible-para-tus-apis/)
+
+[Authentication based in roles](https://www.devglan.com/spring-security/spring-oauth2-role-based-authorization)
+
+[Introduction to Project Lombok](https://www.baeldung.com/intro-to-project-lombok)
 
