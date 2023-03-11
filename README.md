@@ -47,7 +47,7 @@ password: weconnect456
 
 Las tablas dentro de la BD son: 
 
-![Tablas BD PostgreSqL](/img/tablasBD.png)
+![Tablas BD PostgreSqL](/images/tablasBD.png)
 
 
 ## Funcionamiento
@@ -123,7 +123,7 @@ Para el ejemplo el usuario creado sería:
 Con el proyecto implementado a nivel local, se puede acceder a este enlace para visualizar la documentación de la APi
 link: [Swagger](http://localhost:8080/swagger-ui.html#/)
 
-![Documentacion](/img/springFox.png)
+![Documentacion](/images/springFox.png)
 
 ### Tabla de URLs Administrador
 Función | URL
@@ -150,35 +150,39 @@ El servidor de autorizacion habilitado en el backend contiene un usuario guardad
 
 **password**: weconnect
 
-![Authorization](/img/auth.png)
+![Authorization](/images/auth.png)
 
 Si las credenciales son correctas nos dará el visto bueno
 
-![Authorization](/img/ok.png)
+![Authorization](/images/ok.png)
 
 Una vez autenticado, el servidor de autorización genera un token. 
 Este Token será usado para autorizar todas las peticiones al resto de endopoints listados anteriormente. 
 
-![Token](/img/token.png)
+![Token](/images/token.png)
 
 ## Use
 
 Si el proceso de autentificación fué existoso, se tendrá acceso a los endpoints del server. 
 En este ejemplo, se creó un usuario con rol de empleado. 
 
-![User](/img/crearUsuario.png)
+![User](/images/crearUsuario.png)
 
 Como se puede observar, el usuario ha sido generado automáticamente y el password correspondiente a la cédula fué encriptado gracias a ByCript, conservando de esa manera la seguridad de credenciales. 
 
 ## Artículos base consultados para el desarrollo de este proyecto
-[SWAGGER Y SWAGGER UI: ¿QUÉ ES Y POR QUÉ ES IMPRESCINDIBLE PARA TUS APIS?]https://www.chakray.com/es/swagger-y-swagger-ui-por-que-es-imprescindible-para-tus-apis/
+
+[SWAGGER Y SWAGGER UI: ¿QUÉ ES Y POR QUÉ ES IMPRESCINDIBLE PARA TUS APIS?](https://www.chakray.com/es/swagger-y-swagger-ui-por-que-es-imprescindible-para-tus-apis/)
+
 [Authentication based in roles](https://www.devglan.com/spring-security/spring-oauth2-role-based-authorization)
+
 [Introduction to Project Lombok](https://www.baeldung.com/intro-to-project-lombok)
 
 ## Manejo de errores. 
+
 Como se mencionó anteriormente, los datos se encuentran validados de manera correcta. 
 Para el mismo ejemplo de creación de usuario empleado, esta vez se omite la cédula y el servidor devuelve la excepción correspondiente, indicando que la cédula debe contener 10 dígitos. 
 
-![Error](/img/Error.png)
+![Error](/images/Error.png)
 
 
